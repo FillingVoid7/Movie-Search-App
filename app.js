@@ -4,7 +4,7 @@ const axios = require('axios')
 const app = express()
 const port  = 3000
 
-const apiKey = '9098d9f9'
+const apiKey = process.env.OMDBapiKey;
 
 app.use(express.static(path.join(__dirname, 'public')))
 
